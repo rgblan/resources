@@ -1,0 +1,75 @@
+apiVersion: lan.party/v1
+kind: Activity
+metadata:
+  name: lan-setup-help
+  labels:
+    type: social
+    difficulty: easy
+spec:
+  name: "LAN Setup Help Station"
+  description: "Help newcomers set up their gaming stations and network connections"
+  eventRef: "summer-lan-party-2025"
+  type: "social"
+  duration: "30m"
+  maxParticipants: 10
+  requirements:
+    - "Basic computer knowledge"
+    - "Willingness to help others"
+  rewards:
+    - "Helper badge"
+    - "Team points for assisting"
+  settings:
+    location: "Main entrance area"
+    equipment: ["ethernet cables", "power strips", "basic tools"]
+  status: "scheduled"
+  pointsRef: "activity-points-system"
+
+---
+apiVersion: lan.party/v1
+kind: Activity
+metadata:
+  name: retro-gaming-corner
+  labels:
+    type: mini-game
+    difficulty: easy
+spec:
+  name: "Retro Gaming Corner"
+  description: "Classic arcade games and retro console gaming for nostalgic fun"
+  type: "mini-game"
+  duration: "2h"
+  maxParticipants: 20
+  requirements:
+    - "Love for classic games"
+  rewards:
+    - "Retro gaming stickers"
+    - "High score bragging rights"
+  settings:
+    consoles: ["NES", "SNES", "Sega Genesis", "N64"]
+    games: ["Pac-Man", "Street Fighter II", "Super Mario Bros", "Sonic"]
+    scoring: "High score leaderboard"
+
+---
+apiVersion: lan.party/v1
+kind: Activity
+metadata:
+  name: build-competition
+  labels:
+    type: competition
+    difficulty: hard
+spec:
+  name: "PC Building Speed Competition"
+  description: "Race to build a complete PC from components in the fastest time"
+  type: "competition"
+  duration: "45m"
+  maxParticipants: 8
+  requirements:
+    - "PC building experience"
+    - "Team of 2 people"
+  rewards:
+    - "PC building champion title"
+    - "Tool kit prize"
+    - "Team trophy"
+  settings:
+    timeLimit: "30 minutes"
+    components: ["motherboard", "CPU", "RAM", "GPU", "PSU", "storage"]
+    judging: ["speed", "cable management", "POST success"]

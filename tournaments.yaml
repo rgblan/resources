@@ -1,0 +1,96 @@
+apiVersion: lan.party/v1
+kind: Tournament
+metadata:
+  name: counter-strike-2-gun-game
+  labels:
+    game: counter-strike-2
+    skill: competitive
+spec:
+  name: "Counter-Strike 2 Gun Game Tournament"
+  description: "Main CS2 tournament with best teams competing for the championship"
+  eventRef: "summer-lan-party-2025"
+  gameServer: "counter-strike-2-server"  # References the game server
+  format: "single-elimination"
+  teams: ["team-red", "team-green", "team-blue"]
+  startTime: "2025-06-28T10:00:00Z"
+  endTime: "2025-06-28T18:00:00Z"
+  rules:
+    - "Best of 3 matches"
+    - "Standard competitive rules"
+    - "30 rounds maximum"
+    - "No coaching allowed"
+  prize: "Gaming peripheral package + bragging rights"
+  status: "scheduled"
+  pointsRef: "tournament-points-system"
+
+---
+apiVersion: lan.party/v1
+kind: Tournament
+metadata:
+  name: rocket-league-casual
+  labels:
+    game: rocket-league
+    skill: casual
+spec:
+  name: "Rocket League Casual Tournament"
+  description: "Fun and friendly Rocket League tournament for players of all skill levels"
+  eventRef: "summer-lan-party-2025"
+  gameServer: "rocket-league-server"
+  format: "round-robin"
+  teams: ["team-red", "team-green", "team-blue", "team-yellow"]
+  startTime: "2025-06-28T14:00:00Z"
+  endTime: "2025-06-28T17:00:00Z"
+  rules:
+    - "Best of 5 matches"
+    - "3v3 standard format"
+    - "No ball cam restrictions"
+    - "Coaching allowed during timeouts"
+  prize: "Gift cards + team trophies"
+  status: "scheduled"
+  pointsRef: "tournament-points-system"
+
+---
+apiVersion: lan.party/v1
+kind: Tournament
+metadata:
+  name: overwatch-2-competitive
+  labels:
+    game: overwatch-2
+    skill: competitive
+spec:
+  name: "Overwatch 2 Championship"
+  description: "Intense 6v6 Overwatch 2 tournament featuring the best teams"
+  gameServer: "overwatch-2-server"
+  format: "double-elimination"
+  teams: ["team-red", "team-green", "team-blue", "team-yellow", "team-purple", "team-orange"]
+  startTime: "2025-06-29T09:00:00Z"
+  endTime: "2025-06-29T15:00:00Z"
+  rules:
+    - "Best of 3 maps"
+    - "Push, Escort, and Hybrid maps only"
+    - "Hero pools may apply"
+    - "Professional tournament rules"
+  prize: "Cash prize pool + championship medals"
+
+---
+apiVersion: lan.party/v1
+kind: Tournament
+metadata:
+  name: valorant-spike-rush
+  labels:
+    game: valorant
+    skill: casual
+spec:
+  name: "Valorant Spike Rush Blitz"
+  description: "Fast-paced Valorant Spike Rush tournament for quick matches"
+  gameServer: "valorant-server"
+  format: "swiss-system"
+  teams: ["team-red", "team-green", "team-blue", "team-yellow", "team-purple"]
+  startTime: "2025-06-28T19:00:00Z"
+  endTime: "2025-06-28T22:00:00Z"
+  rules:
+    - "Spike Rush mode only"
+    - "First to 4 rounds wins"
+    - "Random weapon selection"
+    - "All agents allowed"
+  prize: "Gaming headsets + victory medals"

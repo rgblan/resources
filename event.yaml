@@ -1,0 +1,13 @@
+apiVersion: lan.party/v1
+kind: Event
+metadata:
+  name: summer-lan-party-2025
+spec:
+  title: "RGB LAN 8 - Summer LAN Party 2025"
+  description: "RGB LAN is a three-day long, BYOC (bring-your-own-computer) LAN party and charity video game tournament, dedicated to power of gaming for good."
+  startTime: "2025-09-05T18:00:00Z"
+  endTime: "2025-09-07T18:00:00Z"
+  location: "100 Station Ave, Oaks, PA 19456"
+  organizer: "Intel LAN Fest"
+  teams: ["team-red", "team-green", "team-blue"]
+  isActive: true

@@ -1,0 +1,122 @@
+apiVersion: lan.party/v1
+kind: Schedule
+metadata:
+  name: summer-lan-schedule-2025
+  labels:
+    event: summer-lan-party-2025
+spec:
+  name: "Summer LAN Party 2025 Schedule"
+  description: "Complete schedule for the 3-day RGB LAN 8 event"
+  eventRef: "summer-lan-party-2025"
+  tournaments: ["counter-strike-2-gun-game", "overwatch-2-competitive", "rocket-league-casual", "valorant-spike-rush"]
+  activities: ["lan-setup-help", "retro-gaming-corner", "build-competition"]
+  events:
+    # Day 1 - Friday
+    - name: "Registration & Setup"
+      description: "Check-in, registration, and initial setup of gaming stations"
+      startTime: "2025-09-05T16:00:00Z"
+      endTime: "2025-09-05T18:00:00Z"
+      location: "Main entrance"
+      type: "registration"
+    
+    - name: "Welcome & Opening Ceremony"
+      description: "Welcome speech and event overview"
+      startTime: "2025-09-05T18:00:00Z"
+      endTime: "2025-09-05T18:30:00Z"
+      location: "Main stage"
+      type: "ceremony"
+      priority: 10
+    
+    - name: "LAN Setup Help Station"
+      description: "Help newcomers with setup"
+      startTime: "2025-09-05T18:30:00Z"
+      endTime: "2025-09-05T20:00:00Z"
+      location: "Help desk"
+      type: "activity"
+      relatedTo: "lan-setup-help"
+    
+    - name: "Counter-Strike 2 Gun Game Tournament"
+      description: "Main CS2 tournament"
+      startTime: "2025-06-28T10:00:00Z"
+      endTime: "2025-06-28T18:00:00Z"
+      location: "Tournament area A"
+      type: "tournament"
+      relatedTo: "counter-strike-2-gun-game"
+      priority: 8
+    
+    - name: "Retro Gaming Corner Opens"
+      description: "Classic arcade and console gaming"
+      startTime: "2025-09-05T19:00:00Z"
+      endTime: "2025-09-05T23:00:00Z"
+      location: "Retro corner"
+      type: "activity"
+      relatedTo: "retro-gaming-corner"
+    
+    # Day 2 - Saturday
+    - name: "Morning Setup"
+      description: "Final setup and preparation for main tournaments"
+      startTime: "2025-09-06T08:00:00Z"
+      endTime: "2025-09-06T09:00:00Z"
+      location: "All areas"
+      type: "setup"
+    
+    - name: "Overwatch 2 Championship"
+      description: "Intense 6v6 championship"
+      startTime: "2025-06-29T09:00:00Z"
+      endTime: "2025-06-29T15:00:00Z"
+      location: "Tournament area B"
+      type: "tournament"
+      relatedTo: "overwatch-2-competitive"
+    
+    - name: "PC Building Speed Competition"
+      description: "Speed building competition"
+      startTime: "2025-09-06T11:00:00Z"
+      endTime: "2025-09-06T12:00:00Z"
+      location: "Workshop area"
+      type: "activity"
+      relatedTo: "build-competition"
+    
+    - name: "Lunch Break"
+      description: "Food and networking break"
+      startTime: "2025-09-06T12:00:00Z"
+      endTime: "2025-09-06T13:00:00Z"
+      location: "Food court"
+      type: "break"
+    
+    - name: "Rocket League Casual Tournament"
+      description: "Fun Rocket League matches"
+      startTime: "2025-06-28T14:00:00Z"
+      endTime: "2025-06-28T17:00:00Z"
+      location: "Tournament area C"
+      type: "tournament"
+      relatedTo: "rocket-league-casual"
+    
+    - name: "Valorant Spike Rush Blitz"
+      description: "Fast-paced Valorant matches"
+      startTime: "2025-06-28T19:00:00Z"
+      endTime: "2025-06-28T22:00:00Z"
+      location: "Tournament area A"
+      type: "tournament"
+      relatedTo: "valorant-spike-rush"
+    
+    # Day 3 - Sunday
+    - name: "Final Tournaments"
+      description: "Championship finals and closing matches"
+      startTime: "2025-09-07T10:00:00Z"
+      endTime: "2025-09-07T15:00:00Z"
+      location: "Main tournament area"
+      type: "tournament"
+    
+    - name: "Awards Ceremony"
+      description: "Prize distribution and recognition"
+      startTime: "2025-09-07T15:00:00Z"
+      endTime: "2025-09-07T16:00:00Z"
+      location: "Main stage"
+      type: "ceremony"
+    
+    - name: "Cleanup & Departure"
+      description: "Event cleanup and participant departure"
+      startTime: "2025-09-07T16:00:00Z"
+      endTime: "2025-09-07T18:00:00Z"
+      location: "All areas"
+      type: "cleanup"

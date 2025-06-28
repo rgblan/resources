@@ -1,0 +1,76 @@
+apiVersion: lan.party/v1
+kind: Points
+metadata:
+  name: tournament-points-system
+  labels:
+    system: tournament
+spec:
+  name: "Tournament Points System"
+  description: "Point allocation system for tournament placements and participation"
+  system: "tournament"
+  rules:
+    - event: "tournament_win"
+      condition: "1st place"
+      points: 100
+      description: "Winner of any tournament"
+    - event: "tournament_runner_up"
+      condition: "2nd place"
+      points: 75
+      description: "Second place in tournament"
+    - event: "tournament_semi_finalist"
+      condition: "3rd-4th place"
+      points: 50
+      description: "Semi-finalist placement"
+    - event: "tournament_participation"
+      condition: "participation"
+      points: 25
+      description: "Participation in any tournament"
+
+---
+apiVersion: lan.party/v1
+kind: Points
+metadata:
+  name: overall-points-system
+  labels:
+    system: overall
+spec:
+  name: "Overall LAN Party Points System"
+  description: "Comprehensive point system for the entire event"
+  system: "overall"
+  rules:
+    - event: "early_arrival"
+      condition: "arrived before 6 PM"
+      points: 10
+      description: "Early arrival bonus"
+    - event: "setup_help"
+      condition: "helped with event setup"
+      points: 30
+      description: "Volunteer setup assistance"
+    - event: "social_participation"
+      condition: "joined group activities"
+      points: 15
+      description: "Active social participation"
+    - event: "clean_up_help"
+      condition: "helped with cleanup"
+      points: 25
+      description: "Volunteer cleanup assistance"
+    - event: "sportsmanship"
+      condition: "good sportsmanship"
+      points: 20
+      description: "Exemplary behavior and attitude"
+    - event: "activity_completion"
+      condition: "completed activity"
+      points: 15
+      description: "Successfully completed an activity"
+    - event: "activity_winner"
+      condition: "1st place in competition"
+      points: 40
+      description: "Won a competitive activity"
+    - event: "helping_others"
+      condition: "assisted newcomer"
+      points: 20
+      description: "Helped another participant"
+    - event: "retro_high_score"
+      condition: "achieved high score"
+      points: 10
+      description: "Set new high score in retro games"

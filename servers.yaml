@@ -1,0 +1,154 @@
+apiVersion: lan.party/v1
+kind: GameServer
+metadata:
+  name: counter-strike-2-server
+  labels:
+    genre: fps
+    platform: pc
+    game: counter-strike-2
+spec:
+  title: "Counter-Strike 2 Server"
+  description: "Official CS2 tournament server with competitive settings"
+  game: "Counter-Strike 2"
+  genre: "First Person Shooter"
+  serverAddress: "192.168.1.100:27015"
+  serverType: "dedicated"
+  maxPlayers: 10
+  currentPlayers: 0
+  platform: "PC"
+  version: "latest"
+  map: "de_dust2"
+  gameMode: "competitive"
+  password: "lanparty2025"
+  status: "online"
+  mods: []
+  connectInfo: "Connect via Steam: steam://connect/192.168.1.100:27015/lanparty2025"
+  settings:
+    maxRounds: 30
+    roundTime: 115
+    buyTime: 20
+    friendlyFire: false
+---
+apiVersion: lan.party/v1
+kind: GameServer
+metadata:
+  name: rocket-league-server
+  labels:
+    genre: sports
+    platform: pc
+    game: rocket-league
+spec:
+  title: "Rocket League Private Match"
+  description: "Custom Rocket League server for tournaments and casual play"
+  game: "Rocket League"
+  genre: "Sports"
+  serverAddress: "192.168.1.101:7777"
+  serverType: "dedicated"
+  maxPlayers: 8
+  currentPlayers: 0
+  platform: "PC"
+  version: "latest"
+  map: "DFH Stadium"
+  gameMode: "soccar"
+  password: "rocketlan2025"
+  status: "online"
+  mods: ["tournament_mode"]
+  connectInfo: "Join via private match code: RLAN2025"
+  settings:
+    matchLength: 5
+    overtime: true
+    boostAmount: 100
+---
+apiVersion: lan.party/v1
+kind: GameServer
+metadata:
+  name: overwatch-2-server
+  labels:
+    genre: fps
+    platform: pc
+    game: overwatch-2
+spec:
+  title: "Overwatch 2 Tournament Server"
+  description: "Dedicated Overwatch 2 server for competitive 6v6 matches"
+  game: "Overwatch 2"
+  genre: "First Person Shooter"
+  serverAddress: "192.168.1.102:7000"
+  serverType: "dedicated"
+  maxPlayers: 12
+  currentPlayers: 0
+  platform: "PC"
+  version: "latest"
+  map: "King's Row"
+  gameMode: "competitive"
+  password: "owlan2025"
+  status: "online"
+  mods: ["tournament_mode", "spectator_mode"]
+  connectInfo: "Join via Battle.net custom game code: OWLAN25"
+  settings:
+    timeBank: 300
+    heroLimitEnabled: true
+    skillRating: "3000+"
+    mapPool: ["King's Row", "Hanamura", "Dorado", "Temple of Anubis"]
+---
+apiVersion: lan.party/v1
+kind: GameServer
+metadata:
+  name: valorant-server
+  labels:
+    genre: fps
+    platform: pc
+    game: valorant
+spec:
+  title: "Valorant Custom Match Server"
+  description: "Valorant server optimized for Spike Rush and competitive matches"
+  game: "Valorant"
+  genre: "Tactical Shooter"
+  serverAddress: "192.168.1.103:7001"
+  serverType: "dedicated"
+  maxPlayers: 10
+  currentPlayers: 0
+  platform: "PC"
+  version: "latest"
+  map: "Bind"
+  gameMode: "spike-rush"
+  password: "vallan2025"
+  status: "online"
+  mods: ["tournament_mode"]
+  connectInfo: "Join via Riot Client custom game code: VALLAN25"
+  settings:
+    roundsToWin: 4
+    plantTime: 4
+    defuseTime: 7
+    buyPhase: false
+    mapRotation: ["Bind", "Haven", "Split", "Ascent"]
+---
+apiVersion: lan.party/v1
+kind: GameServer
+metadata:
+  name: minecraft-server
+  labels:
+    genre: sandbox
+    platform: pc
+    game: minecraft
+spec:
+  title: "Minecraft LAN Party Server"
+  description: "Creative and survival Minecraft server for building competitions"
+  game: "Minecraft Java Edition"
+  genre: "Sandbox"
+  serverAddress: "192.168.1.104:25565"
+  serverType: "dedicated"
+  maxPlayers: 20
+  currentPlayers: 0
+  platform: "PC"
+  version: "1.20.4"
+  map: "LAN Party World"
+  gameMode: "creative"
+  password: "mclan2025"
+  status: "online"
+  mods: ["WorldEdit", "VoxelSniper"]
+  connectInfo: "Direct connect: 192.168.1.104:25565"
+  settings:
+    difficulty: "peaceful"
+    pvp: false
+    keepInventory: true
+    timeLimit: 3600
