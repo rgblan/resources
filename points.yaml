@@ -13,7 +13,7 @@ spec:
       condition: "1st place"
       points: 500
       description: "Winner of any tournament"
-    - event: "Tournament Participation"
+    - event: "Participation"
       condition: "participation"
       points: 50
       description: "Participation in any tournament"
@@ -34,19 +34,15 @@ spec:
       condition: "won a contest"
       points: 250
       description: "Bonus points for winning a contest"
-    - event: "Entered a Bounty"
-      condition: "entered a bounty"
-      points: 250
-      description: "Points for entering a bounty"
     - event: "Mike said so 10"
       condition: "Mike said so 10"
       points: 10
       description: "Points for Mike said so 10"
-    - event: "Mike said so 10"
+    - event: "Mike said so 25"
       condition: "Mike said so 25"
       points: 25
-      description: "Points for Mike said so 10"
-    - event: "Mike said so 10"
+      description: "Points for Mike said so 25"
+    - event: "Mike said so 50"
       condition: "Mike said so 50"
       points: 50
       description: "Points for Mike said so 50"
