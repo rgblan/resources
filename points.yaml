@@ -46,3 +46,7 @@ spec:
       condition: "Mike said so 50"
       points: 50
       description: "Points for Mike said so 50"
+    - event: "bapbap_100"
+      condition: "BapBap 100"
+      points: 100
+      description: "Points for BapBap"
