@@ -9,11 +9,11 @@ spec:
   description: "Point allocation system for tournament placements and participation"
   system: "tournament"
   rules:
-    - event: "Tournament Win"
+    - event: "tournament_Win"
       condition: "1st place"
       points: 500
       description: "Winner of any tournament"
-    - event: "Participation"
+    - event: "participation"
       condition: "participation"
       points: 50
       description: "Participation in any tournament"
@@ -30,19 +30,19 @@ spec:
   description: "Comprehensive point system for the entire event"
   system: "overall"
   rules:
-    - event: "Won a Contest"
+    - event: "won_a_Contest"
       condition: "won a contest"
       points: 250
       description: "Bonus points for winning a contest"
-    - event: "Mike said so 10"
+    - event: "mike_said_so_10"
       condition: "Mike said so 10"
       points: 10
       description: "Points for Mike said so 10"
-    - event: "Mike said so 25"
+    - event: "mike_said_so_25"
       condition: "Mike said so 25"
       points: 25
       description: "Points for Mike said so 25"
-    - event: "Mike said so 50"
+    - event: "mike_said_so_50"
       condition: "Mike said so 50"
       points: 50
       description: "Points for Mike said so 50"
